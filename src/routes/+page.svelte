@@ -1,14 +1,12 @@
 <script>
   export let data;
-
-  let countries = data.countries ?? [];
 </script>
 
 <h1 class="text-3xl font-bold underline">
   Hello world!
 </h1>
 <ul>
-  {#each countries as country}
+  {#each data.countries as country}
     <li>{country.name}</li>
   {/each}
 </ul>
